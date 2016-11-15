@@ -4,6 +4,7 @@ computer_number = rand(1..100)
 # Add count + 1
 count = 0
 
+loop do
 # Ask User For Number
 puts "Please Give Me A Number : "
 guess = gets.chomp.to_i
@@ -20,4 +21,11 @@ end
 # If you guess the number, stop asking for number and say "You win"
 if guess == computer_number
   puts "You Win"
+  break
+end
+# If the total count of all guesses is > than 5 times wrong, say "You Lose"
+if count > 5
+  puts "You Lose"
+  break
+end
 end
