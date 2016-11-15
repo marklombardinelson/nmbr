@@ -13,3 +13,7 @@ count = count + 1
 if guess < computer_number
   puts "Too Low"
 end
+# If the guess is more than the number, say "Too high"
+if guess > computer_number
+  puts "Too High"
+end
