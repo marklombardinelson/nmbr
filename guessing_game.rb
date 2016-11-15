@@ -17,3 +17,7 @@ end
 if guess > computer_number
   puts "Too High"
 end
+# If you guess the number, stop asking for number and say "You win"
+if guess == computer_number
+  puts "You Win"
+end
